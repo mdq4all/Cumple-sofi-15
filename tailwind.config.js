@@ -8,10 +8,24 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'mobile': "url('/i1_edited_mobile.jpg')",
+        'desktop': "url('/i1_upscaled.jpeg')",
       },
+      fontFamily: {
+        'windsong': ['WindSong', 'cursive'],
+        'roboto': ['Roboto', 'sans-serif' ],
+        'josefina': ['Josefin Sans', 'sans-serif']
+      }
+    },
+    colors: {
+      primary: '#F4EDD1',
+      secondary: '#BB7071',
+    },
+    animation: {
+      'name_entrance': 'fadeEntrance 4s ease 0s 1 normal forwards',
+      'title_entrance': 'fadeEntrance 4s ease 2s 1 normal forwards',
+      'slide_down': 'slideDown 2s ease 2s infinite normal forwards',
+      'party': 'fiesta 2s ease 0s infinite normal both',
     },
   },
   plugins: [],
