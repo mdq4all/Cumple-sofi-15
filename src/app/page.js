@@ -1,3 +1,4 @@
+"use client"
 
 import Attendance from "@/components/Attendance";
 import Counter from "@/components/Counter";
