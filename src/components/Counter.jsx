@@ -37,10 +37,10 @@ const Counter = () => {
 
   return (
     <div className="bg-primary text-secondary">
-      <h3 className="text-center pb-2 pt-4 font-roboto text-xl text-white">
+      <h3 className="text-center pb-2 pt-4 font-roboto text-xl md:text-3xl text-white">
         faltan:
       </h3>
-      <div className="flex items-center justify-center gap-x-2 py-2 font-josefina">
+      <div className="flex items-center justify-center gap-x-2 md:gap-x-6 py-2 font-josefina md:text-3xl md:py-4">
         <div className="text-center">
           <p>Días</p>
           <p>{timeLeft.days}</p>

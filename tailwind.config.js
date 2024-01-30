@@ -20,12 +20,14 @@ module.exports = {
     colors: {
       primary: '#F4EDD1',
       secondary: '#BB7071',
+     
     },
     animation: {
       'name_entrance': 'fadeEntrance 4s ease 0s 1 normal forwards',
       'title_entrance': 'fadeEntrance 4s ease 2s 1 normal forwards',
       'slide_down': 'slideDown 2s ease 2s infinite normal forwards',
       'party': 'fiesta 2s ease 0s infinite normal both',
+      'textEntrance': 'bottomEntrance 2s ease 0s 1 normal forwards',
     },
   },
   plugins: [],
