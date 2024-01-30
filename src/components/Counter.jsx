@@ -27,13 +27,12 @@ const Counter = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+   
       const timer = setInterval(() => {
         setTimeLeft(calculateTimeLeft());
       }, 1000);
 
       return () => clearInterval(timer);
-    }
   }, []);
 
   return (

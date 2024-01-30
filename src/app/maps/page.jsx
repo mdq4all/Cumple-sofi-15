@@ -1,6 +1,13 @@
-"use client"
+"use client";
 
 const index = () => {
+
+  const closeMap = () => {
+    if (typeof window !== "undefined") {
+      window.close();
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen w-full items-center justify-center gap-4 font-josefina  text-secondary bg-primary overflow-hidden ">
       <h3 className="text-3xl">Janos Los Naranjos</h3>
@@ -15,7 +22,7 @@ const index = () => {
       ></iframe>
       <button
         className="px-4 py-2 bg-secondary text-primary rounded-md"
-        onClick={window.close}
+        onClick={closeMap}
       >
         cerrar
       </button>

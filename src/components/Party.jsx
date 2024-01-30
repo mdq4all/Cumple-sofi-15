@@ -5,11 +5,16 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 const Party = () => {
-
-    return (
+  return (
     <div>
       <div className="relative">
-        <Image src="/goldenBalloons.jpg" width={1980} height={100} alt="fiesta" />
+        <Image
+          src="/goldenBalloons.jpg"
+          width={1980}
+          height={100}
+          alt="fiesta"
+          priority
+        />
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-josefina text-5xl text-[#ffffff] tracking-widest animate-party shadow-text">
           fiesta!!!
         </p>
@@ -36,7 +41,7 @@ const Party = () => {
           <Link
             href="/maps"
             target="_blank"
-            className="px-4 bg-secondary py-2 text-primary rounded-xl"
+            className="px-4 bg-secondary py-2 text-primary rounded-xl font-roboto"
           >
             como llegar
           </Link>
