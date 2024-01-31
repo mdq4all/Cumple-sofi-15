@@ -31,7 +31,7 @@ const Party = () => {
           <p className="mb-2 md:mb-8">
             La cita es el{" "}
             <span className="font-bold">Viernes 23 de febrero</span>, desde las
-            21:30 hasta las 06:00 hs. Sí, ¡leíste bien! ¡Vamos a festejar hasta
+            21:30 hasta las 05:30 hs. Sí, ¡leíste bien! ¡Vamos a festejar hasta
             el amanecer!
           </p>
           <p className="mb-2 md:mb-8">
