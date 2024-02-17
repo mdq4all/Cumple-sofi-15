@@ -23,15 +23,16 @@ const Attendance = () => {
     <div className="flex flex-col items-center p-4 text-secondary md:p-16 md:text-3xl">
       <WatsappLogo />
       <h2 className="font-bold mb-2 md:mb-8">CONFIRMAR ASISTENCIA</h2>
+      <h2 className="font-bold font-josefina mb-2 md:mb-8">223-5357272</h2>
       <p>Cuento con tu presencia</p>
       <p className="md:mb-8">Si confirmás por favor no faltes!!! 🙏</p>
       <div className="my-4 md:mb-8">
-        <button
+        {/* <button
           className="bg-secondary text-primary px-4 py-2 rounded-xl"
           onClick={WhatsAppMessage}
         >
           confirmar
-        </button>
+        </button> */}
       </div>
       <div ref={ref} className={`flex flex-col gap-4 md:grid md:grid-cols-2 ${isInView ? 'animate-name_entrance' : ''}`}>
         <Image
