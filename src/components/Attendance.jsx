@@ -4,6 +4,7 @@ import Image from "next/image";
 import WatsappLogo from "../../public/WatsappLogo";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 const Attendance = () => {
   const WhatsAppMessage = () => {
@@ -27,12 +28,13 @@ const Attendance = () => {
       <p>Cuento con tu presencia</p>
       <p className="md:mb-8">Si confirmás por favor no faltes!!! 🙏</p>
       <div className="my-4 md:mb-8">
-        {/* <button
+        <Link
           className="bg-secondary text-primary px-4 py-2 rounded-xl"
-          onClick={WhatsAppMessage}
+          // onClick={WhatsAppMessage}
+          href="https://wa.me/542235357272" target="_blank"
         >
           confirmar
-        </button> */}
+        </Link>
       </div>
       <div ref={ref} className={`flex flex-col gap-4 md:grid md:grid-cols-2 ${isInView ? 'animate-name_entrance' : ''}`}>
         <Image
